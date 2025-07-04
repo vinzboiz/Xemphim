@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Có một câu hỏi nhỏ, cần một người trả lời!</title>
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body cz-shortcut-listen="true">
     <div class="container">
-      <img id="mainImage" src="/heart.png" alt="Trái tim" />
+      <img id="mainImage" src="heart.png" alt="Trái tim" />
       <h1 id="question">Vy ơi, cậu có muốn đi xem phim với tớ khônggg</h1>
       <div class="buttons">
         <button id="yes">Có</button>
@@ -61,17 +61,17 @@
         }
 
         // Thay đổi ảnh theo số lần nhấn
-        if (clickCount === 1) mainImage.src = "/cry.png";
-        if (clickCount === 2) mainImage.src = "/cry.png";
-        if (clickCount === 3) mainImage.src = "/cry.png";
-        if (clickCount === 4) mainImage.src = "/cry.png";
+        if (clickCount === 1) mainImage.src = "cry.png";
+        if (clickCount === 2) mainImage.src = "cry.png";
+        if (clickCount === 3) mainImage.src = "cry.png";
+        if (clickCount === 4) mainImage.src = "cry.png";
       });
 
       yesButton.addEventListener("click", function () {
         document.body.innerHTML = `
           <div class="yes-screen">
             <h1 class="yes-text"></h1>
-            <img src="/hug.png" alt="Ôm" class="yes-image">
+            <img src="hug.png" alt="Ôm" class="yes-image">
           </div>
         `;
 
